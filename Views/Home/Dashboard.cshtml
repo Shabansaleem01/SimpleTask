@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 30rem;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Welcome!</h5>
+            <p class="card-text">You are successfully logged in.</p>
+
+            <form method="post" asp-controller="User" asp-action="Login">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>
